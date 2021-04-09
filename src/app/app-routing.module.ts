@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'alerta',
+    loadChildren: () => import('./paginas/alerta/alerta.module').then( m => m.AlertaPageModule)
+  },
+  {
+    path: 'botons',
+    loadChildren: () => import('./paginas/botons/botons.module').then( m => m.BotonsPageModule)
+  },
 ];
 
 @NgModule({
