@@ -53,7 +53,13 @@ export class HomePage {
       icon:"reorder-four-outline",
       name:"Item",
       redirecTo:"/item"
+    },
+    {
+      icon:"sparkles-outline",
+      name:"Modal",
+      redirecTo:"/modal"
     }
+    
   ]
 
   constructor() {}
