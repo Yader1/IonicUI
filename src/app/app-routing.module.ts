@@ -26,7 +26,15 @@ const routes: Routes = [
   {
     path: 'checkbox',
     loadChildren: () => import('./paginas/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },  {
+    path: 'botonfloat',
+    loadChildren: () => import('./paginas/botonfloat/botonfloat.module').then( m => m.BotonfloatPageModule)
   },
+  {
+    path: 'item',
+    loadChildren: () => import('./paginas/item/item.module').then( m => m.ItemPageModule)
+  },
+
 ];
 
 @NgModule({
