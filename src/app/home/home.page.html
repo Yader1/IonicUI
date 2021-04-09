@@ -6,9 +6,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-list>
-    <ion-item *ngFor= "let c of componentes" [routerLink]="c.redirecTo" detail>
+    <ion-item *ngFor= "let c of componetes" [routerLink]="c.redirecTo" detail>
       <ion-icon slot="start" [name]="c.icon" color="danger" ></ion-icon>
       {{c.name}}
     </ion-item>
