@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'botons',
     loadChildren: () => import('./paginas/botons/botons.module').then( m => m.BotonsPageModule)
   },
+  {
+    path: 'tarjetas',
+    loadChildren: () => import('./paginas/tarjetas/tarjetas.module').then( m => m.TarjetasPageModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./paginas/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
 ];
 
 @NgModule({
