@@ -34,6 +34,18 @@ const routes: Routes = [
     path: 'item',
     loadChildren: () => import('./paginas/item/item.module').then( m => m.ItemPageModule)
   },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./paginas/avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./paginas/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'datatime',
+    loadChildren: () => import('./paginas/datatime/datatime.module').then( m => m.DatatimePageModule)
+  },
 
 ];
 
